@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_imagem" />
+
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_view"
+            android:text="Username"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/text_view_nome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view"
+            android:text="Nome Completo"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/text_view1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/image_view"
+            android:text="Nome Repositório"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="50dp"
+            />
+
+        <TextView
+            android:id="@+id/text_view2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view1"
+            android:layout_marginLeft="50dp"
+            android:layout_toEndOf="@id/image_view"
+            android:text="Descricao repositorio lorem ipsum dolore voluptatem sit amet lorem ipsum"
+            android:textSize="10dp" />
+
+        <ImageView
+            android:id="@+id/image_branch"
+            android:src = "@drawable/ic_imagem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view2"
+            android:layout_toEndOf="@id/text_view_nome"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/text_branches"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/image_branch"
+            android:layout_below="@id/text_view2"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="5dp"
+            android:text = "0000"/>
+
+        <ImageView
+            android:id="@+id/image_stars"
+            android:src = "@drawable/ic_imagem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view2"
+            android:layout_toEndOf="@id/image_branch"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/text_stars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/image_stars"
+            android:layout_below="@id/text_view2"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="5dp"
+            android:text = "0000"/>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
